@@ -1,0 +1,36 @@
+{
+  "name": "Auto Login",
+  "version": "0.0.1",
+  "description": "A Chrome extension to auto login with stored password.",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "icons": {
+    "128": "icons/128.png",
+    "48": "icons/48.png",
+    "16": "icons/16.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "128": "icons/128.png",
+      "48": "icons/48.png",
+      "16": "icons/16.png"
+    }
+  }
+}
