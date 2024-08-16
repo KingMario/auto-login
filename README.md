@@ -51,7 +51,7 @@ If you want to store your password in your Google account, you may replace `chro
 4. Navigate to the login page of a site specified in `manifest.json`.
 5. The password will be automatically filled and submitted.
 
-<span style="color: red;">**Caution**: The password in saved in Chrome's local storage, and the password you save are
+<span style="color: red;">**Caution**: The password is saved in Chrome's local storage, and the password you save are
 easily accessible to experienced developers. If you are using this extension within your organization, please make sure
 that using this extension meets your organization's information security requirements. You can prevent password theft by
 locking your screen every time you leave your computer. Use it
